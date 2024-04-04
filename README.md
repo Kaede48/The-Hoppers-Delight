@@ -1,32 +1,18 @@
 # The-Hoppers-Delight
-Welcome to The Hopper's Delight. An open-soruce linux-based project that allows you to install and do basic setups based on the distribution of your choice. Over time, I plan to add more config files for different distributions. 
+Welcome to The Hopper's Delight. An open-soruce linux-based project that allows you to install and do basic setups based on the distribution of your choice. This is intented to be simple, not complicated, mostly to make the linux user's experience when hopping around a bit easier. Most of the code can be rewritten to suit your needs, but serves as a template. 
 
-Currently, the script is built in Bash as it is solely a terminal-based project; however, when I refresh my python understanding and learn more languages, I plan to add more variety to the config files. 
-
-For example, the script will go the following:
+For example, the script will do the following:
 
 - Update the system
+- Install Base programs and allow extra programs until the User says No. 
 - Allow the User to change their dns servers if wanted. 
-- Allow the user to install Brave, an open-source chronium based browser that does not collect any data if wanted (Firefox is installed out of the box on most distros). 
-- Install basic tools such as: nmap, ssh, htop, psensor, curl, and others (placeholder) 
-- Enable SSH if needed.
-- Offer a choice to change your desktop background. Support for GNOME, XFCE, and Cinnamon.  
-- Offer a prompt to install any extra programs not included in the basic install. 
+- Allow the user to install a browser other than Firefox. 
+- Download & Enable SSH if needed for terminal access.Does not generate key, uses password authentication. You can add an SSH keygen command to allow for this and store it locally. 
+- Offer the user a choice if they would like to download a certain programming langauge such as Python, C, and/or Rust. 
 
 # Prerequisites
 <a name="Prerequisites"></a>
-Git must be installed as I recommend using a git clone command in order to clone the respository so that all the files are in one for it to execute. 
-
-If you do not want to git clone, you can download it and run it as a normal bash script. Ensure that it has the necessary permissions to run. 
-
-Depending on the download location, you will need to cd to the directory where the script is stored and run using the command below. 
-
-```bash 
-bash ./linux config.sh 
-```
-
-# Installing Git
-<a name="installing-git"></a>
+Git must be installed. You can download git using the following: 
 
 Debian/Debian-based/Ubuntu/Ubuntu-based:
 
@@ -38,23 +24,18 @@ Arch/Arch-based Derivatives:
 ```bash
 sudo pacman -S git 
 ```
-# Installing dos2unix
-<a name="Installing Dos2unix"></a> 
-
-Debian/Ubuntu/Derivatives: 
-```bash
-sudo apt install dos2unix 
+Once git is installed, clone the respository to your pc: 
+```bash 
+git clone https://github.com/Kaede48/The-Hoppers-Delight.git
 ```
-Arch-based distros: 
-```bash
-sudo pacman -S dos2unix 
+Then: 
 ```
-
-Once git is installed, clone the respository to your pc: https://github.com/Kaede48/The-Hoppers-Delight.git
-
-Run the script in the terminal once cloned: ./the_hoppers_delight.sh 
-
-Follow the prompts, script is case-sensitive. Example: typing in ubuntu will return an error, while Ubuntu wlll execute the script if you choose Ubuntu. 
+cd the-hoppers-delight 
+```
+To run the script: 
+```
+sudo bash ./the_hoppers_delight.sh 
+```
 
 
 # Quality Control
@@ -80,11 +61,6 @@ The following distributions are supported:
 - Ubuntu 
 - Debian 
 - Linux Mint 
-- Arch linux
-- Arco 
 - Pop_OS!
 
-I plan to add more to the list. Gentoo and Slackware come to mind. 
-
-
-Thank you for trying this project. 
+Thanks for trying this project. 
