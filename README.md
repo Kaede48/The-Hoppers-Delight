@@ -6,44 +6,22 @@ For example, the script will do the following:
 - Update the system
 - Install Base programs and allow extra programs until the User says No. 
 - Allow the User to change their dns servers if wanted. 
-- Allow the user to install a browser other than Firefox. 
-- Download & Enable SSH if needed for terminal access.Does not generate key, uses password authentication. You can add an SSH keygen command to allow for this and store it locally. 
-- Offer the user a choice if they would like to download a certain programming langauge such as Python, C, and/or Rust. 
+- Download & Enable SSH if needed for terminal access. Does not generate key, uses password authentication. You can add an SSH keygen command to allow for this and store it locally. 
+- Offer the user a choice if they would like to download a certain programming langauge such as Python or C. 
 
 # Prerequisites
 <a name="Prerequisites"></a>
-Git must be installed. You can download git using the following: 
-
-Debian/Debian-based/Ubuntu/Ubuntu-based:
-
+Git must be installed so you can git clone the project. You can download git using the following: 
 ```bash
 sudo apt install git
 ```
-
-Arch/Arch-based Derivatives: 
-```bash
-sudo pacman -S git 
-```
-Once git is installed, clone the respository to your pc: 
-```bash 
-git clone https://github.com/Kaede48/The-Hoppers-Delight.git
-```
-Then: 
-```
-cd the-hoppers-delight 
-```
-To run the script: 
-```
-sudo bash ./the_hoppers_delight.sh 
-```
-
 
 # Quality Control
 <a name="Quality Control"></a> 
 I tested this program using VMs and bare metal installs. 
 Before you begin, I highly suggest you verify your respective distro's checksum hash. To do this, you must get either the hash from the iso file and compare it to the site's given hash. There are programs that can accomplish this but if you wish to do it via the command-line, you can use the following commands for linux & Windows. 
 
-if you installed your distro on a linux machine: 
+if you installed your distro on another linux machine: 
 ```bash
 md5sum /path/to/your.iso 
 OR (depending on the distro, SHA-256 is what you will see of more). 
@@ -63,4 +41,4 @@ The following distributions are supported:
 - Linux Mint 
 - Pop_OS!
 
-Thanks for trying this project. 
+Thanks for trying this project. Use this to tailor what you need for your installs. 
